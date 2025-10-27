@@ -249,13 +249,15 @@ export default function Contact() {
                     }}
                   >
                     <div
-                      className="p-2 rounded-lg flex-shrink-0"
+                      className="p-2.5 sm:p-3 rounded-lg flex-shrink-0 flex items-center justify-center"
                       style={{
                         background: 'rgba(255, 138, 76, 0.1)',
-                        border: '1px solid rgba(255, 138, 76, 0.2)'
+                        border: '1px solid rgba(255, 138, 76, 0.2)',
+                        width: '44px',
+                        height: '44px'
                       }}
                     >
-                      <div className="w-5 h-5">
+                      <div className="w-5 h-5 flex items-center justify-center">
                         {info.icon}
                       </div>
                     </div>

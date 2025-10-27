@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { FaStar } from 'react-icons/fa';
+import DecryptedText from '../effects/DecryptText';
 
 export default function Home() {
   return (
@@ -44,14 +44,23 @@ export default function Home() {
             </div>
 
             {/* Name */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold whitespace-nowrap">{/*this property is fix*/}
               <span style={{ color: 'var(--text-primary)' }}>I'm </span>
-              <span style={{ color: '#FF8A4C' }}>Dhamini</span>
+              <DecryptedText 
+                text="Dhamini"
+                animateOn="both"
+                maxIterations={20}
+                characters="HJKCD14!"
+                revealDirection="start"
+                className="font-bold"
+                parentClassName="inline-block"
+                style={{ color: '#FF8A4C' }}
+              />
               <span style={{ color: 'var(--text-primary)' }}>,</span>
             </h1>
 
             {/* Title */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold" style={{ color: 'var(--text-primary)' }}>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold whitespace-nowrap" style={{ color: 'var(--text-primary)' }}>
               Software Engineer
             </h2>
 
@@ -61,13 +70,11 @@ export default function Home() {
             </svg>
 
             {/* Avatar with Orange Circle Background */}
-            <div className="relative mt-8">
+            <div className="relative mt-8 w-64 h-64 sm:w-80 sm:h-80 mx-auto">
               {/* Orange Circle Background */}
               <div 
-                className="absolute inset-0 -bottom-1/3 left-1/2 transform -translate-x-1/2"
+                className="absolute inset-0"
                 style={{
-                  width: '280px',
-                  height: '280px',
                   background: 'linear-gradient(135deg, #FF8A4C 0%, #FFB088 100%)',
                   borderRadius: '50%',
                   zIndex: 0
@@ -75,7 +82,7 @@ export default function Home() {
               />
               
               {/* Avatar Image */}
-              <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80">
+              <div className="relative z-10 w-full h-full">
                 <Image
                   src="/cute_png.png"
                   alt="Dhamini Avatar"

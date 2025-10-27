@@ -1,6 +1,6 @@
 'use client';
 
-import ElectricBorder from './ElectricBorder';
+import ElectricBorder from '../effects/ElectricBorder';
 
 export default function Projects() {
   const projects = [
@@ -56,9 +56,9 @@ export default function Projects() {
               key={index}
               color="#FF8A4C"
               speed={1}
-              chaos={0.5}
-              thickness={2}
-              style={{ borderRadius: 16 }}
+              chaos={0.9}
+              thickness={1}
+              style={{ borderRadius: 25 }}
             >
               <div
                 className="bg-white rounded-xl md:rounded-2xl p-6 sm:p-8 transition-all duration-400 text-center flex flex-col justify-between h-full min-h-[320px] sm:min-h-[380px] theme-card"
