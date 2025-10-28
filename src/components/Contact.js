@@ -231,7 +231,8 @@ export default function Contact() {
               >
                 Contact Information
               </h3>
-              <div className="space-y-3 sm:space-y-4">
+              {/* Desktop: vertical layout, Mobile: horizontal icon-only layout */}
+              <div className="flex sm:flex-col flex-row justify-center sm:justify-start gap-3 sm:gap-4 sm:space-y-0">
                 {contactInfo.map((info) => (
                   <a
                     key={info.label}
@@ -261,7 +262,8 @@ export default function Contact() {
                         {info.icon}
                       </div>
                     </div>
-                    <div className="min-w-0 flex-1">
+                    {/* Hide text on mobile, show on sm and above */}
+                    <div className="min-w-0 flex-1 hidden sm:block">
                       <p className="text-xs opacity-60">{info.label}</p>
                       <p className="font-medium text-xs sm:text-sm break-words">{info.value}</p>
                     </div>
