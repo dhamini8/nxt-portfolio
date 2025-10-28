@@ -23,8 +23,8 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="min-h-screen flex items-center justify-center p-4 sm:p-6 md:p-8">
-      <div className="max-w-6xl w-full pt-6 sm:pt-8 md:pt-10 px-4">
+    <section id="education" className="min-h-screen flex items-center justify-center p-4 sm:p-6 md:p-8 pt-15 sm:pt-20 md:pt-24">
+      <div className="max-w-6xl w-full px-4">
         <h2 
           className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-8 sm:mb-12 md:mb-16 text-center tracking-tight"
           style={{
