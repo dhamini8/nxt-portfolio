@@ -53,7 +53,7 @@ export default function Contact() {
       ),
       label: 'GitHub',
       value: 'github.com/dhamini',
-      link: 'https://github.com/dhamini'
+      link: 'https://github.com/dhamini8'
     }
   ];
 
