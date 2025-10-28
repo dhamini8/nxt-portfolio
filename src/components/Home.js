@@ -105,9 +105,9 @@ export default function Home() {
                 boxShadow: '0 4px 20px rgba(255, 138, 76, 0.4)'
               }}
               onClick={() => {
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                const footer = document.getElementById('footer');
+                if (footer) {
+                  footer.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
             >
@@ -127,9 +127,9 @@ export default function Home() {
               boxShadow: '0 4px 20px rgba(255, 138, 76, 0.4)'
             }}
             onClick={() => {
-              const contactSection = document.getElementById('contact');
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
+              const footer = document.getElementById('footer');
+              if (footer) {
+                footer.scrollIntoView({ behavior: 'smooth' });
               }
             }}
           >
